@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <script src="https://unpkg.com/axios-mock-adapter@1.18.1/dist/axios-mock-adapter.min.js"></script>
+  <script src="./dist/reactive.js"></script>
+</head>
+<body>
+  <div id="app">Hello Test</div>
+
+  <script>
+    var reactive = new Reactive({
+      data: {
+        info: {
+          name: 'johnny',
+          age: 30,
+        },
+      },
+      watch: {
+        info() {
+          console.log('info changed');
+        },
+      },
+    });
+  </script>
+</body>
+</html>
