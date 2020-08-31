@@ -129,6 +129,7 @@ export function watch(target, key, effect) {
   if (!target[key]) return;
   effectCache.push(effect);
   if (target[key]._isRef) {
+    // trigger watch for all computed's deps
     target[key].value;
   } else {
     track(target, key);

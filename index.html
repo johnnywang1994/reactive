@@ -14,14 +14,14 @@
   <script>
     var reactive = new Reactive({
       data: {
-        info: {
-          name: 'johnny',
-          age: 30,
-        },
+        name: 'johnny',
       },
-      watch: {
+      computed: {
         info() {
-          console.log('info changed');
+          return this.name + ' ' + this.age;
+        },
+        what() {
+          return this.info + ' is a good year!';
         },
       },
     });

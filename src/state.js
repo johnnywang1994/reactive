@@ -3,7 +3,7 @@ import { reactive } from './reactive';
 
 export function initState(vm) {
   initMethods(vm);
-  callHook(vm, 'beforeCreated');
+  callHook(vm, 'beforeCreate');
   initData(vm);
   initProxy(vm);
   initComputed(vm);
