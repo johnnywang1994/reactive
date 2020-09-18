@@ -28,7 +28,7 @@ Use browser script include, will be set as `window.Reactive`.
 ### Quick Use:
 
 ```js
-import Reactive from 'reactive';
+import Reactive from '@johnnywang/reactive';
 
 const reactive = new Reactive({
   data: {

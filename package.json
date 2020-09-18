@@ -1,5 +1,5 @@
 {
-  "name": "reactive",
+  "name": "@johnnywang/reactive",
   "version": "0.0.1",
   "description": "Tiny reactive data handler for javascript based on Vuejs",
   "main": "./dist/reactive.min.js",
